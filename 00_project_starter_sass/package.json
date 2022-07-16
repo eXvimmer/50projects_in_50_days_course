@@ -4,7 +4,7 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "test": "sass -w ./public/styles/style.scss:./public/styles/style.css"
+    "sass": "sass -w ./public/styles/style.scss:./public/styles/style.css"
   },
   "keywords": [],
   "author": "",
