@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  color: #222;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+body .container {
+  background-color: #fafafa;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 50px;
+}
+body .container.show-nav {
+  transform: rotate(-20deg);
+}
+body .container .circle-container {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+}
+body .container .circle-container .circle {
+  background-color: #ff7979;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 0.5s linear;
+}
+body .container .circle-container .circle button {
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-size: 26px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+}
+body .container .circle-container .circle button:focus {
+  outline: none;
+}
+body .container .circle-container .circle button#open {
+  left: 60%;
+}
+body .container .circle-container .circle button#close {
+  top: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+body .container .content img {
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
