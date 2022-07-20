@@ -1,0 +1,23 @@
+const loadingText = document.querySelector(".loading-text");
+const bg = document.querySelector(".bg");
+
+// from stackoverflow: map a range of numbers to another range of numbers
+function scale(num, in_min, in_max, out_min, out_max) {
+  return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
+}
+
+let load = 0;
+
+const interval = setInterval(blurring, 30);
+
+function blurring() {
+  load++;
+
+  if (load > 99) {
+    clearInterval(interval);
+  }
+
+  loadingText.textContent = `${load}%`;
+  loadingText.style.opacity = scale(load, 0, 100, 1, 0);
+  bg.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`;
+}
