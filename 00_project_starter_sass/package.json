@@ -7,7 +7,7 @@
     "sass": "sass -w ./public/styles/style.scss:./public/styles/style.css"
   },
   "keywords": [],
-  "author": "",
+  "author": "Mustafa Hayati <mustafa.hayati.webdev@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "sass": "^1.53.0"
