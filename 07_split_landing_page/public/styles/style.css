@@ -33,6 +33,12 @@ body {
   transform: translateX(-50%);
   white-space: nowrap;
 }
+@media (max-width: 800px) {
+  .container .split h1 {
+    font-size: 2rem;
+    top: 30%;
+  }
+}
 .container .split.left {
   left: 0;
   background-image: url("../images/ps.jpg");
@@ -83,6 +89,29 @@ body {
   font-weight: bold;
   width: 15rem;
   padding: 1.5rem;
+}
+@media (max-width: 800px) {
+  .container .split .btn {
+    padding: 1.2rem;
+    width: 12rem;
+  }
+}
+.container .split.left, .container .split.right, .container .split.left::before, .container .split.right::before {
+  transition: all 1000ms ease-in-out;
+}
+
+.hover-left .left {
+  width: 75%;
+}
+.hover-left .right {
+  width: 25%;
+}
+
+.hover-right .right {
+  width: 75%;
+}
+.hover-right .left {
+  width: 25%;
 }
 
 /*# sourceMappingURL=style.css.map */
