@@ -20,6 +20,14 @@ html.dark {
   color: var(--primary-color);
 }
 
+.clock-container .clock .center-point::after, .clock-container .clock .center-point {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
 body {
   font-family: "Heebo", sans-serif;
   display: flex;
@@ -54,7 +62,6 @@ body {
   position: relative;
   width: 200px;
   height: 200px;
-  background-color: #f0f0f0;
 }
 .clock-container .clock .needle {
   background-color: var(--primary-color);
@@ -76,6 +83,42 @@ body {
   transform: translate(-50%, -100%) rotate(0deg);
   height: 100px;
   background-color: #e74c3c;
+}
+.clock-container .clock .center-point {
+  background-color: #e74c3c;
+  width: 10px;
+  height: 10px;
+}
+.clock-container .clock .center-point::after {
+  content: "";
+  background-color: var(--secondary-color);
+  width: 5px;
+  height: 5px;
+}
+.clock-container .time {
+  font-size: 60px;
+}
+.clock-container .date {
+  color: #aaa;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: flex-end;
+}
+.clock-container .date .circle {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 18px;
+  transition: all 0.5s ease-in;
+  font-size: 12px;
+  margin-left: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */

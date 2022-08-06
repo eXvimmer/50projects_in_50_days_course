@@ -21,6 +21,14 @@ html {
   }
 }
 
+%center-point {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
 body {
   font-family: "Heebo", sans-serif;
   display: flex;
@@ -56,7 +64,6 @@ body {
     position: relative;
     width: 200px;
     height: 200px;
-    background-color: #f0f0f0;
 
     .needle {
       background-color: var(--primary-color);
@@ -81,6 +88,50 @@ body {
         height: 100px;
         background-color: #e74c3c;
       }
+    }
+
+    .center-point {
+      @extend %center-point;
+      background-color: #e74c3c;
+      width: 10px;
+      height: 10px;
+
+      &::after {
+        @extend %center-point;
+        content: "";
+        background-color: var(--secondary-color);
+        // background-color: var(--primary-color);
+        width: 5px;
+        height: 5px;
+      }
+    }
+  }
+
+  .time {
+    font-size: 60px;
+  }
+
+  .date {
+    color: #aaa;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: flex-end;
+
+    .circle {
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+      border-radius: 50%;
+      height: 18px;
+      width: 18px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      line-height: 18px;
+      transition: all 0.5s ease-in;
+      font-size: 12px;
+      margin-left: 8px;
     }
   }
 }
