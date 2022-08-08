@@ -18,10 +18,11 @@ body {
   overflow: hidden;
 }
 
-button {
+.ripple {
   background-color: purple;
   color: #fff;
   border: 1px solid purple;
+  border-radius: 2px;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
