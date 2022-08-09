@@ -1,10 +1,35 @@
 const canvas /*: HTMLCanvasElement */ = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
+const clear = document.getElementById("clear");
+const decrease = document.getElementById("decrease");
+const increase = document.getElementById("increase");
+const sizeEl = document.getElementById("size");
 
 let size = 20;
 let color = "black";
 let [x, y] = [0, 0];
 let isPressed = false;
+
+clear.addEventListener("click", () => {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+});
+
+decrease.addEventListener("click", () => {
+  size -= 1;
+  if (size < 1) {
+    size = 1;
+  }
+
+  sizeEl.innerText = size;
+});
+
+increase.addEventListener("click", () => {
+  size += 1;
+  if (size > 50) {
+    size = 50;
+  }
+  sizeEl.innerText = size;
+});
 
 canvas.addEventListener("mousedown", (e) => {
   isPressed = true;
