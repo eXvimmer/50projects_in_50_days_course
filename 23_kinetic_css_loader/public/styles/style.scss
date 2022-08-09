@@ -1,0 +1,77 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #144739;
+}
+
+body {
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.kinetic {
+  position: relative;
+  height: 80px;
+  width: 80px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    // NOTE: this is how you create a triangle in CSS
+    height: 0;
+    width: 0;
+    border: 50px solid transparent;
+    border-bottom-color: #fff; // or top or other sides. experiment!
+    // NOTE: end triangle
+    animation: rotateA 2s ease-in infinite 0.5s;
+  }
+
+  &::before {
+    transform: rotate(90deg);
+    animation: rotateB 2s ease-out infinite;
+  }
+}
+
+@keyframes rotateA {
+  0%,
+  25% {
+    transform: rotate(0deg);
+  }
+
+  50%,
+  75% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateB {
+  0%,
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50%,
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(450deg);
+  }
+}
