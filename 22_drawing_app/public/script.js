@@ -4,11 +4,18 @@ const clear = document.getElementById("clear");
 const decrease = document.getElementById("decrease");
 const increase = document.getElementById("increase");
 const sizeEl = document.getElementById("size");
+const colorEl = document.getElementById("color");
 
 let size = 20;
-let color = "black";
+let color = "#ff0000";
 let [x, y] = [0, 0];
 let isPressed = false;
+
+colorEl.value = color;
+
+colorEl.addEventListener("change", (e) => {
+  color = e.target.value;
+});
 
 clear.addEventListener("click", () => {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
