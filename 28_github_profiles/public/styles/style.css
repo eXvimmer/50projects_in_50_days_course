@@ -89,6 +89,9 @@ body {
   display: flex;
   align-items: center;
 }
+.user-info ul li:not(:last-of-type) {
+  margin-right: 1rem;
+}
 .user-info ul li strong {
   font-size: 0.9rem;
   margin-left: 0.5rem;

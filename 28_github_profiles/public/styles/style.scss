@@ -93,6 +93,10 @@ body {
       display: flex;
       align-items: center;
 
+      &:not(:last-of-type) {
+        margin-right: 1rem;
+      }
+
       strong {
         font-size: 0.9rem;
         margin-left: 0.5rem;
