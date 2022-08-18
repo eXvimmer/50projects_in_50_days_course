@@ -23,6 +23,16 @@ const random = {
   },
 };
 
+clipboardEl.addEventListener("click", async () => {
+  const text = resultEl.innerText;
+  if (!text) return;
+  try {
+    await navigator.clipboard.writeText(text);
+  } catch (err) {
+    console.error("Could not copy text: ", err);
+  }
+});
+
 generateEl.addEventListener("click", () => {
   const length = parseInt(lengthEl.value);
   const hasUpper = upperEl.checked;

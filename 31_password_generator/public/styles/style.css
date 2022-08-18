@@ -102,4 +102,14 @@ h2 {
   outline: none;
 }
 
+#clipboard {
+  transition: transform 0.2s;
+}
+#clipboard:hover {
+  cursor: pointer;
+}
+#clipboard:active {
+  transform: scale(97%);
+}
+
 /*# sourceMappingURL=style.css.map */
