@@ -28,6 +28,11 @@ clipboardEl.addEventListener("click", async () => {
   if (!text) return;
   try {
     await navigator.clipboard.writeText(text);
+    const icon = clipboard.querySelector(".far.fa-clipboard");
+    icon.classList.add("success");
+    setTimeout(() => {
+      icon.classList.remove("success");
+    }, 1500);
   } catch (err) {
     console.error("Could not copy text: ", err);
   }

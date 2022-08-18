@@ -111,5 +111,8 @@ h2 {
 #clipboard:active {
   transform: scale(97%);
 }
+#clipboard i.success {
+  color: #2dff00;
+}
 
 /*# sourceMappingURL=style.css.map */
