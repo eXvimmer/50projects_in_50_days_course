@@ -32,6 +32,9 @@ body {
 .toggle-container .toggle:checked + label {
   background-color: var(--primary);
 }
+.toggle-container .toggle:checked + label .ball {
+  animation: slideOn 0.15s linear forwards;
+}
 .toggle-container .label {
   display: inline-block;
   background-color: #d0d0d0;
@@ -52,6 +55,30 @@ body {
   left: 3px;
   align-items: center;
   justify-content: center;
+  animation: slideOff 0.15s linear forwards;
+}
+
+@keyframes slideOn {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(40px);
+  }
+}
+@keyframes slideOff {
+  0% {
+    transform: translateX(40px);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

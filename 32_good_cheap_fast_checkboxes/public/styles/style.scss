@@ -32,6 +32,10 @@ body {
 
     &:checked + label {
       background-color: var(--primary);
+
+      .ball {
+        animation: slideOn 0.15s linear forwards;
+      }
     }
   }
 
@@ -55,6 +59,31 @@ body {
       left: 3px;
       align-items: center;
       justify-content: center;
+      animation: slideOff 0.15s linear forwards;
     }
+  }
+}
+
+@keyframes slideOn {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(40px);
+  }
+}
+
+@keyframes slideOff {
+  0% {
+    transform: translateX(40px);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
