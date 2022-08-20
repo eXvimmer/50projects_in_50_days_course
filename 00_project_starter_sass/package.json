@@ -4,7 +4,8 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "sass": "sass -w ./public/styles/style.scss:./public/styles/style.css"
+    "sass": "sass -w ./public/styles/style.scss:./public/styles/style.css",
+    "prettier": "prettier --ignore-path -w .gitignore \"**/*.+(js|jsx|json|ts|tsx|html|css|scss|graphql)\""
   },
   "keywords": [],
   "author": "Mustafa Hayati <mustafa.hayati.webdev@gmail.com>",
