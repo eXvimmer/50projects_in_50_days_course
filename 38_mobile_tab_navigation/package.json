@@ -1,0 +1,16 @@
+{
+  "name": "mobile_tab_navigation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "sass": "sass -w ./public/styles/style.scss:./public/styles/style.css",
+    "prettier": "prettier --ignore-path -w .gitignore \"**/*.+(js|jsx|json|ts|tsx|html|css|scss|graphql)\""
+  },
+  "keywords": [],
+  "author": "Mustafa Hayati <mustafa.hayati.webdev@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.53.0"
+  }
+}
