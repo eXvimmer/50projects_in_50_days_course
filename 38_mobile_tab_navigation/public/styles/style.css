@@ -59,7 +59,8 @@ nav li {
   padding: 10px;
   text-align: center;
 }
-nav li:hover, nav li:active {
+nav li:hover,
+nav li.active {
   color: #8e44ad;
 }
 nav li p {
