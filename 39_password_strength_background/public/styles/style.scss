@@ -1,0 +1,33 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background {
+  background-image: url("../images/circle.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cever;
+  position: absolute;
+  top: -20px;
+  bottom: -20px;
+  left: -20px;
+  right: -20px;
+  z-index: -1;
+  filter: blur(20px);
+
+  &+ div {
+    transform: translateY(-12%)
+  }
+}
