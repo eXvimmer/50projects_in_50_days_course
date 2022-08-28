@@ -41,13 +41,13 @@ body {
 }
 
 .boxes {
-  height: 500px;
-  width: 500px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  height: 500px;
+  width: 500px;
   position: relative;
-  transition: 0.4 ease;
+  transition: 0.4s ease;
 }
 .boxes.big {
   width: 600px;
@@ -60,10 +60,10 @@ body {
   background-image: url("../images/minions.gif");
   background-repeat: no-repeat;
   background-size: 500px 500px;
+  position: relative;
   height: 125px;
   width: 125px;
-  position: relative;
-  transition: 0.4 ease;
+  transition: 0.4s ease;
 }
 .boxes .box::after {
   content: "";
