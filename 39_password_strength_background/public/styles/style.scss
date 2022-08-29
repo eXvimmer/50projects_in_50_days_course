@@ -27,7 +27,7 @@ body {
   z-index: -1;
   filter: blur(20px);
 
-  &+ div {
-    transform: translateY(-12%)
+  & + div {
+    transform: translateY(-12%);
   }
 }
