@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght&display=swap");
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h2 {
+  position: absolute;
+  top: 10px;
+}
+
+.range-container {
+  position: relative;
+
+  input[type="range"] {
+    width: 300px;
+    margin: 18px 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    &:focus {
+      outline: none;
+    }
+
+    // NOTE: Chrome and Safari
+    &::-webkit-slider-runnable-track {
+      background: purple;
+      border-radius: 4px;
+      width: 100%;
+      height: 10px;
+      cursor: pointer;
+    }
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      height: 24px;
+      width: 24px;
+      background-color: #fff;
+      border-radius: 50%;
+      border: 1px solid purple;
+      margin-top: -7px;
+      cursor: pointer;
+    }
+
+    // NOTE: Firefox
+    &::-moz-range-track {
+      background: purple;
+      border-radius: 4px;
+      width: 100%;
+      height: 18px;
+      cursor: pointer;
+    }
+
+    &::-moz-range-thumb {
+      -moz-appearance: none;
+      appearance: none;
+      height: 24px;
+      width: 24px;
+      background-color: #fff;
+      border-radius: 50%;
+      border: 1px solid purple;
+      margin-top: -7px;
+      cursor: pointer;
+    }
+
+    // NOTE: IE
+    &::-ms-track {
+      background: purple;
+      border-radius: 4px;
+      width: 100%;
+      height: 18px;
+      cursor: pointer;
+    }
+
+    &::-ms-thumb {
+      -moz-appearance: none;
+      appearance: none;
+      height: 24px;
+      width: 24px;
+      background-color: #fff;
+      border-radius: 50%;
+      border: 1px solid purple;
+      margin-top: -7px;
+      cursor: pointer;
+    }
+
+    &+label {
+      background-color: #fff;
+      position: absolute;
+      top: -25px;
+      left: 110px;
+      width: 80px;
+      padding: 5px 0;
+      text-align: center;
+      border-radius: 4px;
+      box-shadow: 0 0 5px rgba(black, 0.3);
+    }
+  }
+}
