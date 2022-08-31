@@ -1,39 +1,43 @@
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./public/styles/style.css" />
+    <title>Feedback UI Design</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./public/styles/style.css" />
-  <title>Feedback UI Design</title>
-</head>
+  <body>
+    <div id="panel" class="panel-container">
+      <strong
+        >How satisfied are you with our <br />customer support
+        performace?</strong
+      >
+      <div class="ratings-container">
+        <div class="rating">
+          <img src="public/images/unhappy-svgrepo-com.svg" alt="unhappy" />
+          <small>Unhappy</small>
+        </div>
 
-<body>
-  <div id="panel" class="panel-container">
-    <strong>How satisfied are you with our <br />customer support
-      performace?</strong>
-    <div class="ratings-container">
-      <div class="rating">
-        <img src="public/images/unhappy-svgrepo-com.svg" alt="unhappy" />
-        <small>Unhappy</small>
+        <div class="rating">
+          <img src="public/images/neutral-face-svgrepo-com.svg" alt="neutral" />
+          <small>Neutral</small>
+        </div>
+
+        <div class="rating active">
+          <img src="public/images/happy-svgrepo-com.svg" alt="satisfied" />
+          <small>Satisfied</small>
+        </div>
       </div>
-
-      <div class="rating">
-        <img src="public/images/neutral-face-svgrepo-com.svg" alt="neutral" />
-        <small>Neutral</small>
-      </div>
-
-      <div class="rating active">
-        <img src="public/images/happy-svgrepo-com.svg" alt="satisfied" />
-        <small>Satisfied</small>
-      </div>
+      <button class="btn" id="send">Send Review</button>
     </div>
-    <button class="btn" id="send">Send Review</button>
-  </div>
-  <script src="./public/script.js"></script>
-</body>
-
+    <script src="./public/script.js"></script>
+  </body>
 </html>

@@ -43,11 +43,13 @@ body {
   padding: 20px;
   margin: 10px 5px;
 }
-.ratings-container .rating:hover, .ratings-container .rating.active {
+.ratings-container .rating:hover,
+.ratings-container .rating.active {
   border-radius: 4px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.ratings-container .rating:hover small, .ratings-container .rating.active small {
+.ratings-container .rating:hover small,
+.ratings-container .rating.active small {
   color: #111;
 }
 .ratings-container .rating img {
