@@ -100,7 +100,7 @@ h2 {
       cursor: pointer;
     }
 
-    &+label {
+    & + label {
       background-color: #fff;
       position: absolute;
       top: -25px;

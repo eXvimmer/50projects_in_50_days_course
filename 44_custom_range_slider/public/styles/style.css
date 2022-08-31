@@ -25,24 +25,24 @@ h2 {
 .range-container {
   position: relative;
 }
-.range-container input[type=range] {
+.range-container input[type="range"] {
   width: 300px;
   margin: 18px 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
-.range-container input[type=range]:focus {
+.range-container input[type="range"]:focus {
   outline: none;
 }
-.range-container input[type=range]::-webkit-slider-runnable-track {
+.range-container input[type="range"]::-webkit-slider-runnable-track {
   background: purple;
   border-radius: 4px;
   width: 100%;
   height: 10px;
   cursor: pointer;
 }
-.range-container input[type=range]::-webkit-slider-thumb {
+.range-container input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   height: 24px;
@@ -53,14 +53,14 @@ h2 {
   margin-top: -7px;
   cursor: pointer;
 }
-.range-container input[type=range]::-moz-range-track {
+.range-container input[type="range"]::-moz-range-track {
   background: purple;
   border-radius: 4px;
   width: 100%;
   height: 18px;
   cursor: pointer;
 }
-.range-container input[type=range]::-moz-range-thumb {
+.range-container input[type="range"]::-moz-range-thumb {
   -moz-appearance: none;
   appearance: none;
   height: 24px;
@@ -71,14 +71,14 @@ h2 {
   margin-top: -7px;
   cursor: pointer;
 }
-.range-container input[type=range]::-ms-track {
+.range-container input[type="range"]::-ms-track {
   background: purple;
   border-radius: 4px;
   width: 100%;
   height: 18px;
   cursor: pointer;
 }
-.range-container input[type=range]::-ms-thumb {
+.range-container input[type="range"]::-ms-thumb {
   -moz-appearance: none;
   appearance: none;
   height: 24px;
@@ -89,7 +89,7 @@ h2 {
   margin-top: -7px;
   cursor: pointer;
 }
-.range-container input[type=range] + label {
+.range-container input[type="range"] + label {
   background-color: #fff;
   position: absolute;
   top: -25px;
