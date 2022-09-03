@@ -96,7 +96,10 @@ body {
     width: 12rem;
   }
 }
-.container .split.left, .container .split.right, .container .split.left::before, .container .split.right::before {
+.container .split.left,
+.container .split.right,
+.container .split.left::before,
+.container .split.right::before {
   transition: all 1000ms ease-in-out;
 }
 

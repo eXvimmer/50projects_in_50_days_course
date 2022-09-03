@@ -20,7 +20,8 @@ html.dark {
   color: var(--primary-color);
 }
 
-.clock-container .clock .center-point::after, .clock-container .clock .center-point {
+.clock-container .clock .center-point::after,
+.clock-container .clock .center-point {
   position: absolute;
   top: 50%;
   left: 50%;

@@ -84,7 +84,7 @@ h2 {
   align-items: center;
   margin: 15px 0;
 }
-.settings .setting input[type=checkbox] {
+.settings .setting input[type="checkbox"] {
   accent-color: var(--primary);
 }
 
@@ -98,7 +98,8 @@ h2 {
   border: none;
   padding: 6px 5px;
 }
-#length:focus, #length:active {
+#length:focus,
+#length:active {
   outline: none;
 }
 

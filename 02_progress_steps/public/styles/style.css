@@ -20,7 +20,8 @@ body {
   text-align: center;
 }
 
-.progress, .progress-container::before {
+.progress,
+.progress-container::before {
   background-color: #3498db;
   position: absolute;
   top: 50%;
