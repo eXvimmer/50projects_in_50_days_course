@@ -1,6 +1,12 @@
 const form = document.getElementById("form");
 const input = document.getElementById("input");
 const todosList = document.getElementById("todos");
+const storageName = "todostodos";
+
+const todos = JSON.parse(localStorage.getItem(storageName));
+if (todos) {
+  todos.forEach(todo => addTodo(todo));
+}
 
 form.addEventListener("submit", e => {
   e.preventDefault();
@@ -24,19 +30,34 @@ function addTodo(todo) {
 
     todoEl.addEventListener("click", () => {
       todoEl.classList.toggle("completed");
+      updateLocalStorage();
       input.focus();
     });
 
     todoEl.addEventListener("contextmenu", e => {
       e.preventDefault();
       todoEl.remove();
+      updateLocalStorage();
       input.focus();
     });
 
     todosList.appendChild(todoEl);
     input.value = "";
 
-    // TODO: Add todos to localStorage
+    updateLocalStorage();
     input.focus();
   }
+}
+
+function updateLocalStorage() {
+  const todosEl = document.querySelectorAll("li");
+  const todos = [];
+  todosEl.forEach(todoEl => {
+    todos.push({
+      text: todoEl.innerText,
+      completed: todoEl.classList.contains("completed"),
+    });
+  });
+
+  localStorage.setItem(storageName, JSON.stringify(todos));
 }
